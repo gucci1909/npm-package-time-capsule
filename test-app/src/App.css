@@ -1,0 +1,7 @@
+html, body {
+    height: 99%;
+    margin: 0;
+}
+#root {
+    height: 100%;
+}

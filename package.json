@@ -1,0 +1,69 @@
+{
+  "name": "react-time-capsule",
+  "version": "0.0.1",
+  "author": "Umang Arora",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "license": "ISC",
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "test": "react-scripts test --coverage watchAll=false",
+    "code-coverage": "set CI=true && react-scripts test --coverage --watchAll=false",
+    "dev": "rollup -c --bundleConfigAsCjs --watch",
+    "start": "npm --prefix ./test-app run start"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/runtime": "^7.25.6"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-image": "^3.0.3",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.104",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.20",
+    "axios": "^1.7.7",
+    "postcss": "^8.4.47",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "5.2.1",
+    "react-scripts": "5.0.1",
+    "rollup": "^4.18.1",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-svg": "^2.0.0",
+    "sass": "^1.78.0",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss": "^3.4.11",
+    "tslib": "^2.6.3",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "src/index.ts"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+# Testing the react-render-watch component in this test-app
